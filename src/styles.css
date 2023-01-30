@@ -1,2 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+
+body { padding-top: 10px; }
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.banner {
+    font-size: .6875rem;
+    font-weight: 700;
+
+    text-align: center;
+    white-space: nowrap;
+
+    width: 100%;
+    padding: .625rem;
+    position: absolute;
+    top: 0px;
+    background-color: #fed925;
+}
+
+button {
+    font-family: Arial Black,Arial Bold, Gadget, sans-serif;
+    font-weight: 900;
+
+    text-align: center;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+
+    margin: auto;
+}
+
+button.nav-secondary {
+    font-size: 1.5rem;
+    font-stretch: 100%;
+}
+
+button.nav-secondary:hover {
+    color: #F9D852;
+    background-color: black;
+    transition: 0.2s;
+}
+
+button.nav-primary {
+    font-size: 2.2rem;
+    font-stretch: 100%;
+
+    padding: 0px 22.5px 0px 22.5px;
+
+
+    background-color: #fed925;
+}
+
+button.nav-primary:hover {
+    color: #FBE897;
+    background-color: #666666;
+    transition: 0.2s;
+}
+
+.buttons-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
