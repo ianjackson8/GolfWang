@@ -82,3 +82,8 @@ button.nav-primary:hover {
 li.social-icons {
     margin-left: 15px;
 }
+
+.space-between-header-footer{
+    width: 0px;
+    height: 112px;
+}
