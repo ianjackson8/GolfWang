@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PromotionsItemModel } from './categories/promotions/promotions-item.model';
+import { promotions_items } from './categories/promotions/promotions-items';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'GolfWang';
+  promotionalItems: PromotionsItemModel [] = [];
+
+  constructor() {
+    for (var promotion of promotions_items) {
+      this.promotionalItems.push(promotion);
+    }
+  }
 }

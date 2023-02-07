@@ -6,13 +6,15 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./promotions.component.css']
 })
 export class PromotionsComponent {
-  img: string;
-  drop: string;
-  link: string;
+  @Input() img: string;
+  @Input() drop: string;
+  @Input() link: string;
+  @Input() avail: string;
 
   constructor() {
     this.img = "";
     this.drop = "DROP TITLE";
     this.link = "/";
+    this.avail = ""
   }
 }

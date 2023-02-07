@@ -1,3 +1,15 @@
 <app-top-navbar></app-top-navbar>
-<app-promotions></app-promotions>
+
+<div class="vr space-between-header-footer"></div>
+
+<div class="container-fluid">
+    <div *ngFor="let promotion of promotionalItems">
+        <app-promotions
+            img={{promotion.img}}
+            drop={{promotion.drop}}
+            avail={{promotion.avail}}>
+        </app-promotions>
+    </div>
+</div>
+
 <app-footer></app-footer>
