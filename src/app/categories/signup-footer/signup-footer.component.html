@@ -1,9 +1,49 @@
-<div class="container">
+<!-- <div class="container">
     <form>
         <div class="d-grid gap-2">
             <input type="email" class="input" id="email" placeholder="Enter your email address">
             <input type="phone number" class="input" id="phone number" placeholder="Phone Number">
             <button type="submit" class="btn-primary">SIGN UP</button>
+        </div>
+    </form>
+</div> -->
+
+
+
+<div class="container text-center">
+    <!-- Form -->
+    <form>
+        <!-- Email Row -->
+        <div class="row">
+            <div class="col">
+                <input type="email" class="input" style="width:100%" id="email" placeholder="Enter your email address">
+            </div>
+        </div>
+
+        <!-- Country code & phone number -->
+        <div class="row">
+            <!-- Country Code -->
+            <div class="col-2">
+                <div class="select">
+                    <select>
+                        <option value="US" selected><img src="../../../assets/img/flags/us.svg" style="height: 1em;"></option>
+                        <option value="AU"></option>
+                        <option value="RU"></option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Phone number -->
+            <div class="col">
+                <input type="phone number" class="input" style="width:100%" id="phone number" placeholder="Phone Number">
+            </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="row">
+            <div class="col">
+                <button type="submit" class="btn-primary">SIGN UP</button>
+            </div>
         </div>
     </form>
 </div>
