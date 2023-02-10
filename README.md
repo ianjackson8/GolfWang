@@ -1,3 +1,25 @@
+# Changelog
+## 02-10-2023
+### Added
+- App routing
+- Tour page component
+- Routing to Tour page
+- Text and request button on Tour page
+- Routing components to `app.component.html`
+
+### Changed
+- Moved landing page content from `app.component.html` to new component `home/home-layout/home-layout.component.html`
+
+## 02-07-2023
+### Fixed
+- Top navbar to have white background
+- Spacing at top of the page
+
+## 01-30-2023
+### Added
+- Bottom Navbar
+- Top Navbar
+
 # GolfWang
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
