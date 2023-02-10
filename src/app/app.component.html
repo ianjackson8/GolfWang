@@ -2,16 +2,6 @@
 
 <div class="vr space-between-header-footer"></div>
 
-<div class="container-fluid">
-    <div *ngFor="let promotion of promotionalItems">
-        <app-promotions
-            img={{promotion.img}}
-            drop={{promotion.drop}}
-            avail={{promotion.avail}}>
-        </app-promotions>
-    </div>
-</div>
-
-<app-signup-footer></app-signup-footer>
+<router-outlet></router-outlet>
 
 <app-footer></app-footer>
