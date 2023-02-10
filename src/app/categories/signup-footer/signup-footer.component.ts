@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-signup-footer',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./signup-footer.component.css']
 })
 export class SignupFooterComponent {
+  @Input() img: string;
+  @Input() country: string;
+  @Input() phoneCode: string;
 
+  constructor() {
+    this.img = "";
+    this.country = "";
+    this.phoneCode = "";
+  }
 }
