@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div *ngFor="let promotion of promotionalItems">
+        <app-promotions
+            img={{promotion.img}}
+            drop={{promotion.drop}}
+            avail={{promotion.avail}}>
+        </app-promotions>
+    </div>
+</div>
+
+<app-signup-footer></app-signup-footer>

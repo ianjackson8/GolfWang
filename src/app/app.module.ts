@@ -5,8 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavbarComponent } from './navigation/top-navbar/top-navbar.component';
 import { FooterComponent } from './footer/footer/footer.component';
-import { PromotionsComponent } from './categories/promotions/promotions.component';
-import { SignupFooterComponent } from './categories/signup-footer/signup-footer.component';
+import { PromotionsComponent } from './home/promotions/promotions.component';
+import { SignupFooterComponent } from './home/signup-footer/signup-footer.component';
+import { TourComponent } from './tour/tour/tour.component';
+import { HomeLayoutComponent } from './home/home-layout/home-layout.component';
+import { NoToursComponent } from './tour/no-tours/no-tours.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { SignupFooterComponent } from './categories/signup-footer/signup-footer.
     TopNavbarComponent,
     FooterComponent,
     PromotionsComponent,
-    SignupFooterComponent
+    SignupFooterComponent,
+    TourComponent,
+    HomeLayoutComponent,
+    NoToursComponent
   ],
   imports: [
     BrowserModule,
