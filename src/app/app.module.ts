@@ -10,6 +10,8 @@ import { SignupFooterComponent } from './home/signup-footer/signup-footer.compon
 import { TourComponent } from './tour/tour/tour.component';
 import { HomeLayoutComponent } from './home/home-layout/home-layout.component';
 import { NoToursComponent } from './tour/no-tours/no-tours.component';
+import { RetailComponent } from './retail/retail/retail.component';
+import { FlagshipComponent } from './retail/flagship/flagship.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { NoToursComponent } from './tour/no-tours/no-tours.component';
     SignupFooterComponent,
     TourComponent,
     HomeLayoutComponent,
-    NoToursComponent
+    NoToursComponent,
+    RetailComponent,
+    FlagshipComponent
   ],
   imports: [
     BrowserModule,

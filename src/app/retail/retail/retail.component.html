@@ -1,0 +1,9 @@
+<div *ngFor="let flagship of flagshipItems">
+    <app-flagship
+        location={{flagship.location}}
+        street={{flagship.street}}
+        city={{flagship.city}}
+        zip={{flagship.zip}}
+        [images]="flagship.images">
+    </app-flagship>
+</div>
