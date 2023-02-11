@@ -13,6 +13,7 @@ export class FlagshipComponent {
     @Input() zip: string;
     @Input() images: string[];
     @Input() imgNum: string[];
+    @Input() index: string;
 
     constructor() {
       this.location = "";
@@ -21,5 +22,6 @@ export class FlagshipComponent {
       this.zip = "";
       this.images = [""];
       this.imgNum = [""];
+      this.index = "";
     }
 }

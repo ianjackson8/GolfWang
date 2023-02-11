@@ -11,7 +11,8 @@ export const flagship_items = [
             "https://cdn.shopify.com/s/files/1/0412/0133/6481/files/page-flag-4_1080x.jpg?v=1613712507",
             "https://cdn.shopify.com/s/files/1/0412/0133/6481/files/page-flag-5_1080x.jpg?v=1613712507"
         ],
-        imgNum: ["0", "1", "2", "3", "4"]
+        imgNum: ["0", "1", "2", "3", "4"],
+        index: "0"
     },
     {
         location: "GOLF WANG NYC",
@@ -25,6 +26,7 @@ export const flagship_items = [
             "https://cdn.shopify.com/s/files/1/0412/0133/6481/files/nyc_flagship-4_1080x.jpg?v=1668555056",
             "https://cdn.shopify.com/s/files/1/0412/0133/6481/files/nyc_flagship-5_1080x.jpg?v=1668555056"
         ],
-        imgNum: ["0", "1", "2", "3", "4"]
+        imgNum: ["0", "1", "2", "3", "4"],
+        index: "1"
     }
 ]

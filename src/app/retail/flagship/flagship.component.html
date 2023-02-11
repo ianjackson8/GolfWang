@@ -35,37 +35,33 @@
 
         <!-- Images col -->
         <div class="col">
-            <div id="carouselExampleIndicators" class="carousel slide center">
+            <div id="carousel-{{index}}" class="carousel slide center">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={{imgNum[0]}} class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" attr.data-bs-target="#carousel-{{index}}" attr.data-bs-slide-to={{imgNum[0]}} class="active" aria-current="true" attr.aria-label="Slide {{imgNum[1]}}"></button>
+                  <button type="button" attr.data-bs-target="#carousel-{{index}}" attr.data-bs-slide-to={{imgNum[1]}} attr.aria-label="Slide {{imgNum[1]}}"></button>
+                  <button type="button" attr.data-bs-target="#carousel-{{index}}" attr.data-bs-slide-to={{imgNum[2]}} attr.aria-label="Slide {{imgNum[2]}}"></button>
+                  <button type="button" attr.data-bs-target="#carousel-{{index}}" attr.data-bs-slide-to={{imgNum[3]}} attr.aria-label="Slide {{imgNum[3]}}"></button>
+                  <button type="button" attr.data-bs-target="#carousel-{{index}}" attr.data-bs-slide-to={{imgNum[4]}} attr.aria-label="Slide {{imgNum[4]}}"></button>
                 </div>
+
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class="carousel-item active image-cropper">
                     <img src={{images[0]}} class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item image-cropper">
                     <img src={{images[1]}} class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item image-cropper">
                     <img src={{images[2]}} class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item image-cropper">
                     <img src={{images[3]}} class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item image-cropper">
                     <img src={{images[4]}} class="d-block w-100" alt="...">
                   </div>
                 </div>
-              </div>
+            </div>
         </div>
-
-        <!-- Blank col -->
-        <!--<div class="col-3">
-            <br>
-        </div>-->
     </div>
 </div>

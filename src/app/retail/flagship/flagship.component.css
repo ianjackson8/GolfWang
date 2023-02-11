@@ -44,3 +44,16 @@ p.fs {
 .carousel .carousel-indicators button.active {
     background-color: #fed925;
 }
+
+.image-cropper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
