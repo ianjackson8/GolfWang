@@ -1,4 +1,22 @@
 # Changelog
+## 02-24-2023
+### Added
+- App routing to Retail page
+- Flagship card with store information and image carousel
+- Added following attributes to `flagship-item.model.ts`
+  - location
+  - street
+  - city
+  - zip
+  - images
+  - imgNum
+  - index
+- Added the NYC and LA store information to `flagship-items.ts`
+- Implemented to the `retail.component.html` using an `ngFor` loop
+
+### Changed
+- App routing to include page titles and routing to Retail page
+
 ## 02-10-2023
 ### Added
 - App routing
