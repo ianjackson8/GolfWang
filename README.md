@@ -1,5 +1,13 @@
 # Changelog
 ## DATE
+### Added
+- Layout components for the following pages
+  - info
+  - login
+  - shop
+  - book
+- Routing for the pages listed above
+- `routerLink`s to the respective pages in the NavBar and footer
 ### Changed
 - Renamed `RetailComponent` to `RetailLayoutComponent`
 - Renamed `TourComponent` to `TourComponentLayout`

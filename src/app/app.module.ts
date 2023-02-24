@@ -12,6 +12,10 @@ import { HomeLayoutComponent } from './home/home-layout/home-layout.component';
 import { NoToursComponent } from './tour/no-tours/no-tours.component';
 import { RetailLayoutComponent } from './retail/retail-layout/retail-layout.component';
 import { FlagshipComponent } from './retail/flagship/flagship.component';
+import { BookLayoutComponent } from './book/book-layout/book-layout.component';
+import { InfoLayoutComponent } from './info/info-layout/info-layout.component';
+import { LoginLayoutComponent } from './login/login-layout/login-layout.component';
+import { ShopLayoutComponent } from './shop/shop-layout/shop-layout.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { FlagshipComponent } from './retail/flagship/flagship.component';
     HomeLayoutComponent,
     NoToursComponent,
     RetailLayoutComponent,
-    FlagshipComponent
+    FlagshipComponent,
+    BookLayoutComponent,
+    InfoLayoutComponent,
+    LoginLayoutComponent,
+    ShopLayoutComponent
   ],
   imports: [
     BrowserModule,
