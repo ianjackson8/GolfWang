@@ -1,5 +1,11 @@
 export const promotions_items = [
     {
+        img: "./assets/img/promotional/FW22-23_ESSENTIALS_HOMEPAGE_900x.jpg",
+        drop: "GOLF ESSENTIALS",
+        link: "/",
+        avail: "AVAILABLE NOW"
+    },
+    {
         img: "./assets/img/promotional/VDAYHOMEPAGE_900x.jpg",
         drop: "VALENTINES DAY CAPSULE",
         link: "/",

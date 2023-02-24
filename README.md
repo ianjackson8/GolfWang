@@ -11,6 +11,16 @@
 - Moved landing page content from `app.component.html` to new component `home/home-layout/home-layout.component.html`
 
 ## 02-07-2023
+### Added
+- Promotional card component using `ngFor` loop
+  - Added following attributes to `promotions-item.model.ts`
+    - img
+    - drop
+    - link
+    - avail
+  - Added mock data to `promotions-items.ts`
+- Sign up form above footer
+
 ### Fixed
 - Top navbar to have white background
 - Spacing at top of the page
