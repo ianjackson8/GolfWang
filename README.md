@@ -8,6 +8,7 @@
   - book
 - Routing for the pages listed above
 - `routerLink`s to the respective pages in the NavBar and footer
+- added flex box for each page above
 ### Changed
 - Renamed `RetailComponent` to `RetailLayoutComponent`
 - Renamed `TourComponent` to `TourComponentLayout`
