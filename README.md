@@ -1,5 +1,5 @@
 # Changelog
-## DATE
+## 02-24-2023
 ### Added
 - Layout components for the following pages
   - info
