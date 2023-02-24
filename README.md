@@ -1,6 +1,20 @@
 # Changelog
 ## 02-24-2023
 ### Added
+- Layout components for the following pages
+  - info
+  - login
+  - shop
+  - book
+- Routing for the pages listed above
+- `routerLink`s to the respective pages in the NavBar and footer
+- added flex box for each page above
+### Changed
+- Renamed `RetailComponent` to `RetailLayoutComponent`
+- Renamed `TourComponent` to `TourComponentLayout`
+
+## 02-24-2023
+### Added
 - App routing to Retail page
 - Flagship card with store information and image carousel
 - Added following attributes to `flagship-item.model.ts`

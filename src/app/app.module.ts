@@ -7,11 +7,15 @@ import { TopNavbarComponent } from './navigation/top-navbar/top-navbar.component
 import { FooterComponent } from './footer/footer/footer.component';
 import { PromotionsComponent } from './home/promotions/promotions.component';
 import { SignupFooterComponent } from './home/signup-footer/signup-footer.component';
-import { TourComponent } from './tour/tour/tour.component';
+import { TourLayoutComponent } from './tour/tour-layout/tour-layout.component';
 import { HomeLayoutComponent } from './home/home-layout/home-layout.component';
 import { NoToursComponent } from './tour/no-tours/no-tours.component';
-import { RetailComponent } from './retail/retail/retail.component';
+import { RetailLayoutComponent } from './retail/retail-layout/retail-layout.component';
 import { FlagshipComponent } from './retail/flagship/flagship.component';
+import { BookLayoutComponent } from './book/book-layout/book-layout.component';
+import { InfoLayoutComponent } from './info/info-layout/info-layout.component';
+import { LoginLayoutComponent } from './login/login-layout/login-layout.component';
+import { ShopLayoutComponent } from './shop/shop-layout/shop-layout.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,15 @@ import { FlagshipComponent } from './retail/flagship/flagship.component';
     FooterComponent,
     PromotionsComponent,
     SignupFooterComponent,
-    TourComponent,
+    TourLayoutComponent,
     HomeLayoutComponent,
     NoToursComponent,
-    RetailComponent,
-    FlagshipComponent
+    RetailLayoutComponent,
+    FlagshipComponent,
+    BookLayoutComponent,
+    InfoLayoutComponent,
+    LoginLayoutComponent,
+    ShopLayoutComponent
   ],
   imports: [
     BrowserModule,
