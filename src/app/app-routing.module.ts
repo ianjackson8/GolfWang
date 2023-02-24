@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeLayoutComponent } from './home/home-layout/home-layout.component';
-import { RetailComponent } from './retail/retail/retail.component';
-import { TourComponent } from './tour/tour/tour.component';
+import { RetailLayoutComponent } from './retail/retail-layout/retail-layout.component';
+import { TourLayoutComponent } from './tour/tour-layout/tour-layout.component';
 
 const routes: Routes = [
   {
@@ -12,12 +12,12 @@ const routes: Routes = [
   },
   {
     path: "tour", 
-    component: TourComponent,
+    component: TourLayoutComponent,
     title: "Tour"
   },
   {
     path: "flag",
-    component: RetailComponent,
+    component: RetailLayoutComponent,
     title: "Flag"
   }
 ];

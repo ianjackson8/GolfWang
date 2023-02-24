@@ -3,11 +3,11 @@ import { FlagshipItemModel } from '../flagship/flagship-item.model';
 import { flagship_items } from '../flagship/flagship-items';
 
 @Component({
-  selector: 'app-retail',
-  templateUrl: './retail.component.html',
-  styleUrls: ['./retail.component.css']
+  selector: 'app-retail-layout',
+  templateUrl: './retail-layout.component.html',
+  styleUrls: ['./retail-layout.component.css']
 })
-export class RetailComponent {
+export class RetailLayoutComponent {
   flagshipItems: FlagshipItemModel [] = [];
 
   constructor() {

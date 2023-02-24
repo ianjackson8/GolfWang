@@ -1,4 +1,9 @@
 # Changelog
+## DATE
+### Changed
+- Renamed `RetailComponent` to `RetailLayoutComponent`
+- Renamed `TourComponent` to `TourComponentLayout`
+
 ## 02-24-2023
 ### Added
 - App routing to Retail page
