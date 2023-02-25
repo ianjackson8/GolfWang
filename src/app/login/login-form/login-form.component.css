@@ -1,0 +1,57 @@
+.center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 63.5%;
+}
+
+col {
+    padding: 0px 20px 0px 20px;
+}
+
+.border-right{
+    border-right: .125rem dotted #000;
+}
+
+p.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+p.login-text {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+p.login-link {
+    color: #000;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+    font-weight: 700;
+}
+
+a.login-form-input {
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn {
+    appearance: none;
+    background-color: #000;
+    border: 0;
+    color: #fed925;
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.5rem 0.625rem;
+    text-align: center;
+    text-decoration: none;
+    transition: color .2s ease-in-out,background-color .2s ease-in-out;
+    vertical-align: middle;
+    white-space: nowrap;
+}
