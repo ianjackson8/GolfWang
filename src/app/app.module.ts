@@ -16,6 +16,7 @@ import { BookLayoutComponent } from './book/book-layout/book-layout.component';
 import { InfoLayoutComponent } from './info/info-layout/info-layout.component';
 import { LoginLayoutComponent } from './login/login-layout/login-layout.component';
 import { ShopLayoutComponent } from './shop/shop-layout/shop-layout.component';
+import { ShopNavbarComponent } from './shop/shop-navbar/shop-navbar.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ShopLayoutComponent } from './shop/shop-layout/shop-layout.component';
     BookLayoutComponent,
     InfoLayoutComponent,
     LoginLayoutComponent,
-    ShopLayoutComponent
+    ShopLayoutComponent,
+    ShopNavbarComponent
   ],
   imports: [
     BrowserModule,
