@@ -24,8 +24,4 @@ a.divider {
     top: 50%;
     transform: translate(50%,-50%);
     width: .3125rem;
-}
-
-* :after {
-    box-sizing: border-box;
 } */

@@ -5,7 +5,7 @@ import { HomeLayoutComponent } from './home/home-layout/home-layout.component';
 import { InfoLayoutComponent } from './info/info-layout/info-layout.component';
 import { LoginLayoutComponent } from './login/login-layout/login-layout.component';
 import { RetailLayoutComponent } from './retail/retail-layout/retail-layout.component';
-import { ShopLayoutComponent } from './shop/shop-layout/shop-layout.component';
+import { ShopNewComponent } from './shop/shop-new/shop-new.component';
 import { TourLayoutComponent } from './tour/tour-layout/tour-layout.component';
 
 const routes: Routes = [
@@ -25,8 +25,8 @@ const routes: Routes = [
     title: "Flag"
   },
   {
-    path: "collections",
-    component: ShopLayoutComponent,
+    path: "collections/new",
+    component: ShopNewComponent,
     title: "GOLF WANG | NEW"
   },
   {

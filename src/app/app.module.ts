@@ -15,8 +15,9 @@ import { FlagshipComponent } from './retail/flagship/flagship.component';
 import { BookLayoutComponent } from './book/book-layout/book-layout.component';
 import { InfoLayoutComponent } from './info/info-layout/info-layout.component';
 import { LoginLayoutComponent } from './login/login-layout/login-layout.component';
-import { ShopLayoutComponent } from './shop/shop-layout/shop-layout.component';
+import { ShopNewComponent } from './shop/shop-new/shop-new.component';
 import { ShopNavbarComponent } from './shop/shop-navbar/shop-navbar.component';
+import { ItemsComponent } from './shop/items/items.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +34,9 @@ import { ShopNavbarComponent } from './shop/shop-navbar/shop-navbar.component';
     BookLayoutComponent,
     InfoLayoutComponent,
     LoginLayoutComponent,
-    ShopLayoutComponent,
-    ShopNavbarComponent
+    ShopNewComponent,
+    ShopNavbarComponent,
+    ItemsComponent
   ],
   imports: [
     BrowserModule,
