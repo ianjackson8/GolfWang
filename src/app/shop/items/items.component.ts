@@ -7,10 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class ItemsComponent {
   @Input() imgPrimary: string;
-  img2?: string;
-  img3?: string;
-  img4?: string;
-  link: string;
+  @Input() img2?: string;
+  @Input() img3?: string;
+  @Input() img4?: string;
+  @Input() link: string;
+  @Input() type: string[];
 
   constructor() {
     this.imgPrimary = "";
@@ -18,5 +19,6 @@ export class ItemsComponent {
     this.img3 = "";
     this.img4 = "";
     this.link = "/";
+    this.type = [""];
   }
 }

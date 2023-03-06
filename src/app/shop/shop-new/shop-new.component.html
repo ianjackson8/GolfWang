@@ -1,1 +1,5 @@
-<p>shop-new works!</p>
+<div *ngFor="let item of items">
+    <app-items
+        imgPrimary={{item.imgPrimary}}>
+    </app-items>
+</div>
