@@ -15,7 +15,18 @@ import { FlagshipComponent } from './retail/flagship/flagship.component';
 import { BookLayoutComponent } from './book/book-layout/book-layout.component';
 import { InfoLayoutComponent } from './info/info-layout/info-layout.component';
 import { LoginLayoutComponent } from './login/login-layout/login-layout.component';
+import { ShopNavbarComponent } from './shop/shop-navbar/shop-navbar.component';
+import { ItemsComponent } from './shop/items/items.component';
 import { ShopLayoutComponent } from './shop/shop-layout/shop-layout.component';
+import { ShopNewComponent } from './shop/shop-new/shop-new.component';
+import { ShopAllComponent } from './shop/shop-all/shop-all.component';
+import { ShopBottomsComponent } from './shop/shop-bottoms/shop-bottoms.component';
+import { ShopTopsComponent } from './shop/shop-tops/shop-tops.component';
+import { ShopHatsComponent } from './shop/shop-hats/shop-hats.component';
+import { ShopSocksComponent } from './shop/shop-socks/shop-socks.component';
+import { ShopAccessoriesComponent } from './shop/shop-accessories/shop-accessories.component';
+import { ShopMusicComponent } from './shop/shop-music/shop-music.component';
+import { ShopTeesComponent } from './shop/shop-tees/shop-tees.component';
 import { LoginFormComponent } from './login/login-form/login-form.component';
 
 @NgModule({
@@ -33,7 +44,18 @@ import { LoginFormComponent } from './login/login-form/login-form.component';
     BookLayoutComponent,
     InfoLayoutComponent,
     LoginLayoutComponent,
+    ShopNavbarComponent,
+    ItemsComponent,
     ShopLayoutComponent,
+    ShopNewComponent,
+    ShopAllComponent,
+    ShopBottomsComponent,
+    ShopTopsComponent,
+    ShopHatsComponent,
+    ShopSocksComponent,
+    ShopAccessoriesComponent,
+    ShopMusicComponent,
+    ShopTeesComponent,
     LoginFormComponent
   ],
   imports: [

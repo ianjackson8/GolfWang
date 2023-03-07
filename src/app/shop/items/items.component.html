@@ -1,0 +1,27 @@
+<div class="col" style="margin-bottom: 40px">
+    <div id="carousel-{{index}}" class="carousel slide center">
+        <div class="carousel-indicators">
+            <div *ngFor="let img of images; let i=index; first as isFirst">
+                <button
+                    type="button"
+                    attr.data-bs-target="#carousel-{{index}}"
+                    attr.data-bs-slide-to="{{i}}"
+                    [ngClass]="isFirst ? 'active' : '' "
+                    [ariaCurrent]="isFirst ? 'true' : 'false'"
+                    attr.aria-label="Slide {{i}}"
+                    >
+                </button>
+            </div>
+        </div>
+
+        <a href={{link}}>
+            <div class="carousel-inner">
+                <div *ngFor="let img of images; first as isFirst">
+                    <div [ngClass]="isFirst ? 'carousel-item active' : 'carousel-item'">
+                        <img src={{img}} class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
