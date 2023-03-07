@@ -27,6 +27,7 @@ import { ShopSocksComponent } from './shop/shop-socks/shop-socks.component';
 import { ShopAccessoriesComponent } from './shop/shop-accessories/shop-accessories.component';
 import { ShopMusicComponent } from './shop/shop-music/shop-music.component';
 import { ShopTeesComponent } from './shop/shop-tees/shop-tees.component';
+import { LoginFormComponent } from './login/login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { ShopTeesComponent } from './shop/shop-tees/shop-tees.component';
     ShopSocksComponent,
     ShopAccessoriesComponent,
     ShopMusicComponent,
-    ShopTeesComponent
+    ShopTeesComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,8 @@
 - Added mock product data
 - Displayed products in category using `*ngFor` component
 - Carousel component for each product
+- `LoginLayoutComponent` & `LoginPageComponent`
+  - Login page with two columns: login and sign up
 
 ## 03-06-2023
 ### Added
