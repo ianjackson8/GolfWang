@@ -12,7 +12,10 @@ export class ShopNewComponent {
 
   constructor() {
     for (var item of items) {
-      this.items.push(item);
+      // only include NEW items
+      if (item.type.includes("new")) {
+        this.items.push(item);
+      }
     }
   }
 }

@@ -6,19 +6,15 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./items.component.css']
 })
 export class ItemsComponent {
-  @Input() imgPrimary: string;
-  @Input() img2?: string;
-  @Input() img3?: string;
-  @Input() img4?: string;
+  @Input() images: string[];
   @Input() link: string;
   @Input() type: string[];
+  @Input() index: string;
 
   constructor() {
-    this.imgPrimary = "";
-    this.img2 = "";
-    this.img3 = "";
-    this.img4 = "";
+    this.images = [""];
     this.link = "/";
     this.type = [""];
+    this.index = "";
   }
 }
