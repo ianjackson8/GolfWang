@@ -1,4 +1,36 @@
 # Changelog
+## 03-07-2023
+### Added
+- Added model for items with the following attributes:
+  - `images: string[]`
+  - `link: string`
+  - `type; string[]`
+  - `index: string`
+- Added mock product data
+- Displayed products in category using `*ngFor` component
+- Carousel component for each product
+
+## 03-06-2023
+### Added
+- Created components for each filter page, which includes:
+  - `ShopAccessoriesComponent`
+  - `ShopAllComponent`
+  - `ShopBottomsComponent`
+  - `ShopHatsComponent`
+  - `ShopLayoutComponent`
+  - `ShopMusicComponent`
+  - `ShopNewComponent`
+  - `ShopSocksComponent`
+  - `ShopTeesComponent`
+  - `ShopTopsComponent`
+- Child routing for each filter button in the shop page Navbar; under `ShopLayoutComponent`
+- Added `<router-outlet></router-outlet>` for routing to child routes
+
+## 03-03-2023
+### Added
+- Navbar component for the shop page
+- Routing from "SHOP" button in main Navbar
+
 ## 02-24-2023
 ### Added
 - Layout components for the following pages
