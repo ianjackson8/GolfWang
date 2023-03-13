@@ -5,10 +5,14 @@
 - `user-info-test` component as backend playground (not used in final product)
 
 ### Changed
-- `home-layout.component.ts` to pull promotional data from the backend
+- The following components to pull data from backend
+  - `home-layout.component.ts` -> promotional data
+  - `retail-layout.component.ts` -> flagship data
 
 ### Removed
-- `promotions-items.ts` mock data; data moved to Firebase
+- The following mock data files; moved to Firebase
+  - `promotions-items.ts`
+  - `flagship-items.ts`
 
 ## 03-07-2023
 ### Added
