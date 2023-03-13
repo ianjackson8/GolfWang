@@ -1,4 +1,15 @@
 # Changelog
+## 03-12-2023
+### Added
+- Linked [Firebase backend](https://console.firebase.google.com/project/golfwang-feea0/overview) to project 
+- `user-info-test` component as backend playground (not used in final product)
+
+### Changed
+- `home-layout.component.ts` to pull promotional data from the backend
+
+### Removed
+- `promotions-items.ts` mock data; data moved to Firebase
+
 ## 03-07-2023
 ### Added
 - Added model for items with the following attributes:
