@@ -1,4 +1,9 @@
 # Changelog
+## 03-19-2022
+### Added
+- passing `link` attribute of `promotionalItems` into `<app-promotions>` component to link promotions to their page
+- (WIP) Bash script to easily add items on shop to backend
+
 ## 03-12-2023
 ### Added
 - Linked [Firebase backend](https://console.firebase.google.com/project/golfwang-feea0/overview) to project 
