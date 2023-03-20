@@ -2,7 +2,7 @@
 ## 03-19-2022
 ### Added
 - passing `link` attribute of `promotionalItems` into `<app-promotions>` component to link promotions to their page
-- (WIP) Bash script to easily add items on shop to backend
+- Bash script to easily add items on shop to backend by formatting JSON and using REST API to add item to the backend
 
 ## 03-12-2023
 ### Added
