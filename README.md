@@ -1,4 +1,24 @@
 # Changelog
+## 03-19-2022
+### Added
+- passing `link` attribute of `promotionalItems` into `<app-promotions>` component to link promotions to their page
+- Bash script to easily add items on shop to backend by formatting JSON and using REST API to add item to the backend
+
+## 03-12-2023
+### Added
+- Linked [Firebase backend](https://console.firebase.google.com/project/golfwang-feea0/overview) to project 
+- `user-info-test` component as backend playground (not used in final product)
+
+### Changed
+- The following components to pull data from backend
+  - `home-layout.component.ts` -> promotional data
+  - `retail-layout.component.ts` -> flagship data
+
+### Removed
+- The following mock data files; moved to Firebase
+  - `promotions-items.ts`
+  - `flagship-items.ts`
+
 ## 03-07-2023
 ### Added
 - Added model for items with the following attributes:

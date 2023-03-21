@@ -1,18 +1,31 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 import { FlagshipItemModel } from '../flagship/flagship-item.model';
-import { flagship_items } from '../flagship/flagship-items';
 
 @Component({
   selector: 'app-retail-layout',
   templateUrl: './retail-layout.component.html',
   styleUrls: ['./retail-layout.component.css']
 })
-export class RetailLayoutComponent {
-  flagshipItems: FlagshipItemModel [] = [];
+export class RetailLayoutComponent implements OnInit {
+  flagshipItems: FlagshipItemModel[] | undefined = [];
 
-  constructor() {
-    for (var flagship of flagship_items) {
-      this.flagshipItems.push(flagship);
-    }
+  constructor(private http: HttpClient) {
+
+  }
+
+  ngOnInit(): void {
+    this.getFlagshipInfo();
+    this.showFlagshipInfo();
+  }
+
+  getFlagshipInfo() {
+    return this.http.get<FlagshipItemModel[]>('https://golfwang-feea0-default-rtdb.firebaseio.com/flagship.json');
+  }
+
+  showFlagshipInfo() {
+    this.getFlagshipInfo().subscribe((data: FlagshipItemModel[]) => {
+      this.flagshipItems = data;
+    })
   }
 }

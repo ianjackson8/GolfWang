@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { ShopAccessoriesComponent } from './shop/shop-accessories/shop-accessori
 import { ShopMusicComponent } from './shop/shop-music/shop-music.component';
 import { ShopTeesComponent } from './shop/shop-tees/shop-tees.component';
 import { LoginFormComponent } from './login/login-form/login-form.component';
+import { UserInfoTestComponent } from './user-info-test/user-info-test.component';
 
 @NgModule({
   declarations: [
@@ -56,11 +58,13 @@ import { LoginFormComponent } from './login/login-form/login-form.component';
     ShopAccessoriesComponent,
     ShopMusicComponent,
     ShopTeesComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    UserInfoTestComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

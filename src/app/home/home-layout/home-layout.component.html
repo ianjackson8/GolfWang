@@ -1,10 +1,13 @@
 <div class="container-fluid">
-    <div *ngFor="let promotion of promotionalItems">
-        <app-promotions
-            img={{promotion.img}}
-            drop={{promotion.drop}}
-            avail={{promotion.avail}}>
-        </app-promotions>
+    <div *ngIf="promotionalItems != undefined">
+        <div *ngFor="let promotion of promotionalItems">
+            <app-promotions
+                img={{promotion.img}}
+                drop={{promotion.drop}}
+                avail={{promotion.avail}}
+                link="{{promotion.link}}">
+            </app-promotions>
+        </div>
     </div>
 </div>
 
