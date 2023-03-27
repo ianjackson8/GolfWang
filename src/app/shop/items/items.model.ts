@@ -1,13 +1,30 @@
 export class ItemsModels {
-    images: string[];
-    link: string;
-    type: string[];
-    index: string;
+    desc: string
+    images: string[]
+    itemName: string
+    link: string
+    numSec: string
+    price: string
+    secImages: string[]
+    type: string[]
 
-    constructor(images: string[], link: string, type: string[], index: string) {
-        this.images = images;
-        this.link = link;
-        this.type = type;
-        this.index = index;
+    constructor(
+        desc: string,
+        images: string[],
+        itemName: string,
+        link: string,
+        numSec: string,
+        price: string,
+        secImages: string[],
+        type: string[]
+    ) {
+        this.desc = desc
+        this.images = images
+        this.itemName = itemName
+        this.link = link
+        this.numSec = numSec
+        this.price = price
+        this.secImages = secImages
+        this.type = type
     }
 }

@@ -1,5 +1,18 @@
 # Changelog
-## 03-19-2022
+## 03-27-2023
+### Added
+- Call Me if You Get Lost: The Estate Sale promotional card
+- New CMIYGL Items into Realtime Database
+
+### Changed
+- Existing promotional cards to not include "available now"
+- All shop components to pull from Realtime Database
+
+### Removed
+- Existing products on the page
+- `items.ts`
+
+## 03-19-2023
 ### Added
 - passing `link` attribute of `promotionalItems` into `<app-promotions>` component to link promotions to their page
 - Bash script to easily add items on shop to backend by formatting JSON and using REST API to add item to the backend
