@@ -1,10 +1,10 @@
 <div class="col" style="margin-bottom: 40px">
-    <div id="carousel-{{index}}" class="carousel slide center">
+    <div id="carousel-{{itemName}}" class="carousel slide center">
         <div class="carousel-indicators">
             <div *ngFor="let img of images; let i=index; first as isFirst">
                 <button
                     type="button"
-                    attr.data-bs-target="#carousel-{{index}}"
+                    attr.data-bs-target="#carousel-{{itemName}}"
                     attr.data-bs-slide-to="{{i}}"
                     [ngClass]="isFirst ? 'active' : '' "
                     [ariaCurrent]="isFirst ? 'true' : 'false'"
