@@ -10,6 +10,7 @@ import { ItemsModels } from '../items/items.model';
 })
 export class ShopNewComponent implements OnInit {
   items: ItemsModels [] = [];
+  isEmpty: boolean | any;
 
   constructor(private http: HttpClient) { }
 
@@ -43,6 +44,8 @@ export class ShopNewComponent implements OnInit {
           }
         }
       }
+
+      this.isEmpty = !this.items.length;
     });
   }
 }

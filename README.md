@@ -3,6 +3,7 @@
 ### Added
 - Call Me if You Get Lost: The Estate Sale promotional card
 - New CMIYGL Items into Realtime Database
+- Check if a category of items are empty, if so then display message on page
 
 ### Changed
 - Existing promotional cards to not include "available now"
@@ -11,6 +12,7 @@
 ### Removed
 - Existing products on the page
 - `items.ts`
+- Free shipping banner
 
 ## 03-19-2023
 ### Added
