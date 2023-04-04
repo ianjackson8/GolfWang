@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { PromotionalItemsService } from 'src/app/services/promotional-items.service';
 import { PromotionsItemModel } from '../promotions/promotions-item.model';
 
 @Component({
@@ -10,22 +10,13 @@ import { PromotionsItemModel } from '../promotions/promotions-item.model';
 export class HomeLayoutComponent implements OnInit {
   promotionalItems: PromotionsItemModel[] | undefined = [];
 
-  constructor(private http: HttpClient) {
+  constructor(private promotionalItemsServices: PromotionalItemsService) {
 
   }
 
   ngOnInit(): void {
-    this.getPromotionalInfo();
-    this.showPromotionalInfo();
-  }
-
-  getPromotionalInfo() {
-    return this.http.get<PromotionsItemModel[]>('https://golfwang-feea0-default-rtdb.firebaseio.com/promotions.json');
-  }
-
-  showPromotionalInfo() {
-    this.getPromotionalInfo().subscribe((data: PromotionsItemModel[]) => {
+    this.promotionalItemsServices.getPromotionalItems().subscribe((data: PromotionsItemModel[]) => {
       this.promotionalItems = data;
-    })
+    });
   }
 }
