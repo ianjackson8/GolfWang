@@ -1,4 +1,11 @@
 # Changelog
+## 04-04-2023
+### Added
+- Services to decouple the backend from the view
+  - `promotional-items.service.ts`
+  - `flagship.service.ts`
+  - `shop.service.ts`
+
 ## 03-27-2023
 ### Added
 - Call Me if You Get Lost: The Estate Sale promotional card
