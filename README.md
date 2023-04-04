@@ -6,6 +6,12 @@
   - `flagship.service.ts`
   - `shop.service.ts`
 
+### Changed
+- Following components to use the service to pull from the Realtime database
+  - Promotional items on the main page
+  - Flagship detail in Retail
+  - All of the shop categories in Shop
+
 ## 03-27-2023
 ### Added
 - Call Me if You Get Lost: The Estate Sale promotional card
