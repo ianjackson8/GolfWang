@@ -1,4 +1,10 @@
 # Changelog
+## 04-11-2023
+### Added
+- Bash script to delete all items in the "Items" branch of the database (for when the site is cleared and new items are added)
+- AngularFire and Firebase
+- Added Firebase deploy adn associated environments
+
 ## 04-04-2023
 ### Added
 - Services to decouple the backend from the view
