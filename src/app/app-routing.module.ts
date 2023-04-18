@@ -16,6 +16,7 @@ import { ShopSocksComponent } from './shop/shop-socks/shop-socks.component';
 import { ShopTeesComponent } from './shop/shop-tees/shop-tees.component';
 import { ShopTopsComponent } from './shop/shop-tops/shop-tops.component';
 import { TourLayoutComponent } from './tour/tour-layout/tour-layout.component';
+import { AddProductLayoutComponent } from './add-product/add-product-layout/add-product-layout.component';
 
 const routes: Routes = [
   {
@@ -99,6 +100,11 @@ const routes: Routes = [
     path: "info",
     component: InfoLayoutComponent,
     title: "Info"
+  },
+  {
+    path: "admin",
+    component: AddProductLayoutComponent,
+    title: "Admin"
   }
 ];
 

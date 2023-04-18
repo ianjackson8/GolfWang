@@ -2,6 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavbarComponent } from './navigation/top-navbar/top-navbar.component';
@@ -31,6 +36,10 @@ import { ShopTeesComponent } from './shop/shop-tees/shop-tees.component';
 import { LoginFormComponent } from './login/login-form/login-form.component';
 import { UserInfoTestComponent } from './user-info-test/user-info-test.component';
 
+import { environment } from 'src/environments/environment.prod';
+import { AddProductLayoutComponent } from './add-product/add-product-layout/add-product-layout.component';
+import { AddProductFormComponent } from './add-product/add-product-form/add-product-form.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,12 +68,18 @@ import { UserInfoTestComponent } from './user-info-test/user-info-test.component
     ShopMusicComponent,
     ShopTeesComponent,
     LoginFormComponent,
-    UserInfoTestComponent
+    UserInfoTestComponent,
+    AddProductLayoutComponent,
+    AddProductFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
