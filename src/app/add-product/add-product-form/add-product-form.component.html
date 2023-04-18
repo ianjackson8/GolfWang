@@ -1,0 +1,91 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <h1 style="text-align: center;">Add Product</h1>
+            <form #postForm="ngForm" (ngSubmit)="addItem(postForm.value)">
+                <!-- Item name -->
+                <div class="mb-3">
+                    <label for="itemName">Item Name</label>
+                    <input type="text" class="form-control" id="itemName" ngModel name="itemName">
+                </div>
+
+                <!-- Item description -->
+                <div class="mb-3">
+                    <label for="desc">Item Description</label>
+                    <input type="text" class="form-control" id="desc" ngModel name="desc">
+                </div>
+
+                <div class="row g-6">
+                    <!-- Price -->
+                    <div class="col-6">
+                        <label for="price">Price</label>
+                        <input type="text" class="form-control" id="price" ngModel name="price">
+                    </div>
+
+                    <!-- SecImg -->
+                    <div class="col-6">
+                        <label for="numSec">Number of Secondary Images</label>
+                        <input type="text" class="form-control" id="numSec" ngModel name="numSec">
+                    </div>
+                </div>
+
+                <!-- Type -->
+                <p style="margin: 20px auto 0px auto">Types</p>
+                <div class="mb-3">
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="new" value="new" [(ngModel)]="type.new" name="new">
+                        <label for="new" class="form-check-label">New</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="all" value="all" [(ngModel)]="type.all" name="all">
+                        <label for="all" class="form-check-label">All</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="tops" value="tops" [(ngModel)]="type.tops" name="tops">
+                        <label for="tops" class="form-check-label">Tops</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="bottoms" value="bottoms" [(ngModel)]="type.bottoms" name="bottoms">
+                        <label for="bottoms" class="form-check-label">Bottoms</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="tees" value="tees" [(ngModel)]="type.tees" name="tees">
+                        <label for="tees" class="form-check-label">Tees</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="hats" value="hats" [(ngModel)]="type.hats" name="hats">
+                        <label for="hats" class="form-check-label">Hats</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="socks" value="socks" [(ngModel)]="type.socks" name="socks">
+                        <label for="socks" class="form-check-label">Socks</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="accessories" value="accessories" [(ngModel)]="type.accessories" name="accessories">
+                        <label for="accessories" class="form-check-label">Accessories</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="music" value="music" [(ngModel)]="type.music" name="music">
+                        <label for="music" class="form-check-label">Music</label>
+                    </div>
+                </div>
+
+                <!-- Images -->
+                <div class="mb-3">
+                    <label for="img" class="form-label">Links to Images</label>
+                    <textarea class="form-control" id="img" rows="3" ngModel [(ngModel)]="imageLinks" name="img"></textarea>
+                </div>
+
+                <!-- Sec Images -->
+                <div class="mb-3">
+                    <label for="secImg" class="form-label">Links to Secondary Images</label>
+                    <textarea class="form-control" id="secImg" rows="3" ngModel [(ngModel)]="secImageLinks" name="secImg"></textarea>
+                </div>
+
+                <button class="btn-primary" type="submit">Add Item</button>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>

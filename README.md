@@ -1,9 +1,17 @@
 # Changelog
+## 04-18-2023
+### Added
+- Admin page (`/admin`)
+- Form to add an item to the backend
+
+### Changed
+- HTTP request to use Firebase methods
+
 ## 04-11-2023
 ### Added
 - Bash script to delete all items in the "Items" branch of the database (for when the site is cleared and new items are added)
 - AngularFire and Firebase
-- Added Firebase deploy adn associated environments
+- Added Firebase deploy and associated environments
 - Deployed WebApp at [https://golfwang-feea0.web.app](https://golfwang-feea0.web.app)
 
 ## 04-04-2023

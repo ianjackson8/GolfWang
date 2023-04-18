@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ItemsModels } from '../shop/items/items.model';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Injectable({
   providedIn: 'root'
@@ -9,10 +10,11 @@ export class ShopService {
   private baseURL: string = "https://golfwang-feea0-default-rtdb.firebaseio.com/";
   private itemsEndpoint: string = "items.json"
 
-  constructor(private http: HttpClient) { }
+  constructor(private db: AngularFireDatabase) { }
 
   getItemInfo() {
-    return this.http.get<ItemsModels[]>(this.baseURL + this.itemsEndpoint);
+    //return this.http.get<ItemsModels[]>(this.baseURL + this.itemsEndpoint);
+    return this.db.list<ItemsModels>("items").valueChanges();
   }
 
   /**
@@ -40,5 +42,9 @@ export class ShopService {
     })
 
     return [items, items.length == 0];
+  }
+
+  addItem(item: ItemsModels) {
+    this.db.list<ItemsModels>("items").push(item);
   }
 }
