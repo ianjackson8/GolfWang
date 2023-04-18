@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "golfwang-feea0"
+  },
+  "targets": {
+    "golfwang-feea0": {
+      "hosting": {
+        "GolfWang": [
+          "golfwang-feea0"
+        ]
+      }
+    }
   }
 }
