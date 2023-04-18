@@ -4,6 +4,7 @@
 - Bash script to delete all items in the "Items" branch of the database (for when the site is cleared and new items are added)
 - AngularFire and Firebase
 - Added Firebase deploy adn associated environments
+- Deployed WebApp at [https://golfwang-feea0.web.app](https://golfwang-feea0.web.app)
 
 ## 04-04-2023
 ### Added
