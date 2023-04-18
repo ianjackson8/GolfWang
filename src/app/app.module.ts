@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { AngularFireStorageModule } from '@angular/fire/compat/storage';
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { provideDatabase,getDatabase } from '@angular/fire/database'
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
+import { AngularFireModule } from '@angular/fire/compat'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,6 +39,7 @@ import { UserInfoTestComponent } from './user-info-test/user-info-test.component
 import { environment } from 'src/environments/environment.prod';
 import { AddProductLayoutComponent } from './add-product/add-product-layout/add-product-layout.component';
 import { AddProductFormComponent } from './add-product/add-product-form/add-product-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -76,10 +77,10 @@ import { AddProductFormComponent } from './add-product/add-product-form/add-prod
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularFireAuthModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)), provideDatabase(() => getDatabase()),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireStorageModule,
-    AngularFireDatabaseModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
