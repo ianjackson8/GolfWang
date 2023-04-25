@@ -40,6 +40,8 @@ import { environment } from 'src/environments/environment.prod';
 import { AddProductLayoutComponent } from './add-product/add-product-layout/add-product-layout.component';
 import { AddProductFormComponent } from './add-product/add-product-form/add-product-form.component';
 import { FormsModule } from '@angular/forms';
+import { CreateAcctLayoutComponent } from './create-acct/create-acct-layout/create-acct-layout.component';
+import { CreateAcctFormComponent } from './create-acct/create-acct-form/create-acct-form.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +73,9 @@ import { FormsModule } from '@angular/forms';
     LoginFormComponent,
     UserInfoTestComponent,
     AddProductLayoutComponent,
-    AddProductFormComponent
+    AddProductFormComponent,
+    CreateAcctLayoutComponent,
+    CreateAcctFormComponent
   ],
   imports: [
     BrowserModule,

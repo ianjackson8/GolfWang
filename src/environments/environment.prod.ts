@@ -6,8 +6,8 @@ export const environment = {
     projectId: "golfwang-feea0",
     storageBucket: "golfwang-feea0.appspot.com",
     messagingSenderId: "936670401029",
-    appId: "1:936670401029:web:3336a28c09da82bd2a826c",
-    measurementId: "G-LPEESCVM9E"
+    appId: "1:936670401029:web:c26294d901ded7ed2a826c",
+    measurementId: "G-7ERSR389N5"
   },
   production: true
 };
