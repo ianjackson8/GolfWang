@@ -1,4 +1,12 @@
 # Changelog
+## 04-24-2023
+### Added
+- Create account page
+- Service to handle user creation and login
+- Create account and login form working
+- Logging in as admin will route to add product page
+  - `admin@admin.com` and `Password`
+
 ## 04-18-2023
 ### Added
 - Admin page (`/admin`)
