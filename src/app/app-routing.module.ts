@@ -17,6 +17,7 @@ import { ShopTeesComponent } from './shop/shop-tees/shop-tees.component';
 import { ShopTopsComponent } from './shop/shop-tops/shop-tops.component';
 import { TourLayoutComponent } from './tour/tour-layout/tour-layout.component';
 import { AddProductLayoutComponent } from './add-product/add-product-layout/add-product-layout.component';
+import { CreateAcctLayoutComponent } from './create-acct/create-acct-layout/create-acct-layout.component';
 
 const routes: Routes = [
   {
@@ -105,6 +106,11 @@ const routes: Routes = [
     path: "admin",
     component: AddProductLayoutComponent,
     title: "Admin"
+  },
+  {
+    path: "account/register",
+    component: CreateAcctLayoutComponent,
+    title: "Create Account"
   }
 ];
 

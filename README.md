@@ -1,4 +1,8 @@
 # Changelog
+## 04-24-2023
+### Added
+- Create account page
+
 ## 04-18-2023
 ### Added
 - Admin page (`/admin`)
