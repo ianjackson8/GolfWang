@@ -5,13 +5,13 @@
         <div class="col">
             <p class="title">CREATE ACCOUNT</p>
 
-            <form action="">
+            <form #createAcctFrom="ngForm" (ngSubmit)="onSubmit(createAcctFrom)">
                 <div class="d-grid gap-0" style="margin-bottom: 20px;">
-                    <input type="name" class="input" id="firstName" placeholder="First Name">
-                    <input type="name" class="input" id="lastName" placeholder="Last Name">
-                    <input type="email" class="input" id="email" placeholder="Email">
-                    <input type="password" class="input" id="password" placeholder="Password">
-                    <button type="submit" class="btn-primary">Create</button>
+                    <input type="name" class="input" id="firstName" placeholder="First Name" ngModel name="firstName">
+                    <input type="name" class="input" id="lastName" placeholder="Last Name" ngModel name="lastName">
+                    <input type="email" class="input" id="email" placeholder="Email" ngModel name="email">
+                    <input type="password" class="input" id="password" placeholder="Password" ngModel name="password">
+                    <button type="submit" class="btn-primary" [disabled]="!createAcctFrom.value">Create</button>
                 </div>
 
                 <p class="login-text"><a routerLink="/login" class="login-link"><b>Back to Login</b></a></p>

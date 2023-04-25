@@ -9,11 +9,11 @@
                 Make sure to <a href="#" class="login-link"><b>re-activate your account</b></a>
             </p>
 
-            <form>
+            <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
                 <div class="d-grid gap-0" style="margin-bottom: 20px;">
-                    <input type="email" class="input" id="email" placeholder="Email">
-                    <input type="password" class="input" id="password" placeholder="Password">
-                    <button type="submit" class="btn-primary">Sign In</button>
+                    <input type="email" class="input" id="email" placeholder="Email" ngModel name="email">
+                    <input type="password" class="input" id="password" placeholder="Password" ngModel name="password">
+                    <button type="submit" class="btn-primary" [disabled]="!loginForm.value">Sign In</button>
                 </div>
 
                 <p class="login-text"><a href="#" class="login-link"><b>Forget Your Password?</b></a></p>
