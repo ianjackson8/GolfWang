@@ -3,12 +3,17 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "public",
-    "site": "golfwang-feea0",
+    "public": "dist/golf-wang",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
